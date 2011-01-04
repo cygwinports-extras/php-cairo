@@ -1,0 +1,4 @@
+category: PHP
+requires: libcairo2 libfreetype6 php
+sdesc: "PHP cairo extension"
+ldesc: "PHP interface to the cairo graphics library"

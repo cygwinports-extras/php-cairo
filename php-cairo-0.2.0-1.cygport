@@ -1,0 +1,13 @@
+ORIG_PN="Cairo"
+PHP_CHANNEL=pecl
+inherit php
+
+CPPFLAGS+=" -DCOMPILE_DL_CAIRO"
+
+src_install() {
+	cd ${B}
+	php_install
+	php_postinst
+
+	newlib .libs/cairo.dll.a libphp_cairo.dll.a
+}
