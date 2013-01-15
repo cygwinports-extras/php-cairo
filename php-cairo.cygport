@@ -2,6 +2,15 @@ ORIG_PN="Cairo"
 PHP_CHANNEL=pecl
 inherit php
 
+NAME="php-cairo"
+VERSION=0.3.2
+RELEASE=1
+CATEGORY="PHP"
+SUMMARY="PHP cairo extension"
+DESCRIPTION="PHP interface to the cairo graphics library"
+
+DEPS_PATH=${PHP_EXTENSION_DIR}
+
 CPPFLAGS+=" -DCOMPILE_DL_CAIRO"
 
 src_install() {
