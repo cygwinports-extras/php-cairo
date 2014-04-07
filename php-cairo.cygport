@@ -4,7 +4,7 @@ inherit php
 
 NAME="php-cairo"
 VERSION=0.3.2
-RELEASE=1
+RELEASE=2
 CATEGORY="PHP"
 SUMMARY="PHP cairo extension"
 DESCRIPTION="PHP interface to the cairo graphics library"
